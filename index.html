@@ -315,7 +315,7 @@
 
   <iframe
     id="app"
-    src="https://script.google.com/macros/s/AKfycbw3G2Nb5Wn5vnz0qM7O8BKhbKeFaGF0yuf_-iZCgjl4D8ai9cUw6DVdeWmBlylYWgVn/exec?page=steuerung"
+    src="https://script.google.com/macros/s/AKfycbw3G2Nb5Wn5vnz0qM7O8BKhbKeFaGF0yuf_-iZCgjl4D8ai9cUw6DVdeWmBlylYWgVn/exec?page=steuerung&app=1&v=20261106-2"
     allow="
       camera;
       microphone;
@@ -911,10 +911,12 @@
 
           navigator
             .serviceWorker
-            .register('./sw.js')
+            .register('./sw.js?v=20261106-2', { updateViaCache: 'none' })
 
             .then(
               function(registration) {
+
+                registration.update();
 
                 console.log(
                   'Infoscreen Service Worker aktiv:',

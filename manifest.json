@@ -3,7 +3,7 @@
   "name": "Infoscreen Steuerung – Feuerwehr St. Pölten",
   "short_name": "Infoscreen",
   "description": "Mobile Steuerung des Infoscreens der Feuerwehr St. Pölten-Stadt",
-  "start_url": "./?pwa=infoscreen-steuerung&v=20261106-2",
+  "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "background_color": "#f4f6fa",
